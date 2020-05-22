@@ -1,0 +1,146 @@
+body,html{
+  margin:0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+ul{
+
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+li{
+   display: inline-block;
+   float: right;
+}
+li a{
+  font-family: 'Squada One', cursive;
+  background-color: black;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  font-size: 48px;
+}
+
+.box
+{
+  position: absolute;
+  
+   top: 65%;
+  left: 35%;
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  border:2px solid white;
+  box-shadow: 3px 9px white;
+
+}
+.box2
+{
+  position: absolute;
+ top: 10%;
+  left: 35%;
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  border:2px solid white;
+  
+
+}
+
+.parallax {
+ 
+  background-image: url('BG2-01.png');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slide{
+  
+  position: relative;
+  margin: auto;
+  height: 500px;
+  width: 700px;
+}
+
+.fade{
+  display: none;
+}
+
+
+/* Number text (1/3 etc) */
+.number{
+  color: #0000FF;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slide2{
+  
+  position: relative;
+  margin: auto;
+  height: 500px;
+  width: 700px;
+}
+
+.fade2{
+  display: none;
+}
+
+
+/* Number text (1/3 etc) */
+.number2{
+  color: #0000FF;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .parallax {
+    background-attachment: scroll;
+     background-image: url('PBG-01.png');
+  }
+  .navbar{
+    position: absolute;
+    left: 0px;
+    width: 50px;
+
+  }
+
+  li{
+    display: block;
+    float: left;
+     padding:10px;
+  }
+  ul{
+    float: left;
+
+  }
+}
+
+
+
+

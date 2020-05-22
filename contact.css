@@ -1,0 +1,143 @@
+body,html{
+  margin:0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+ul{
+
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+li{
+   display: inline-block;
+   float: right;
+}
+li a{
+  font-family: 'Squada One', cursive;
+  background-color: black;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  font-size: 48px;
+}
+
+.box
+{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  background-color: black;
+  height: 500px;
+  width: 700px;
+  border:2px solid white;
+  box-shadow: 3px 9px white;
+
+}
+
+.parallax {
+ 
+  background-image: url('BG2-01.png');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+textarea{
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+label{
+  color: white;
+  font-family: 'Squada One', cursive;
+  font-size: 36px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 20%;
+  
+   background-color: #003EFF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  
+
+}
+
+
+input[type=submit]:hover{
+background-color: #0000FF;
+  
+}
+
+@media only screen and (max-width: 1400px) {
+  .parallax {
+    background-attachment: scroll;
+     background-image: url('PBG-01.png');
+  }
+  .bio{
+    font-size: 24px;
+  }
+  .navbar{
+    position: absolute;
+    left: 0px;
+    width: 50px;
+
+  }
+
+  li{
+    display: block;
+    float: left;
+     padding:10px;
+  }
+  ul{
+    float: left;
+
+  }
+  input[type=submit] {
+  left: 5%;
+  width: 20%;
+}

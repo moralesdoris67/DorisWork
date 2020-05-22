@@ -1,0 +1,121 @@
+body,html{
+  margin:0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+.Doris{
+  position: absolute;
+  left: 7%;
+}
+.Doris2{
+  opacity: 50%;
+  color: red;
+  position: absolute;
+  left: 4%;
+  bottom: 0%;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+.parallax {
+ 
+  background-image: url('BG2-01.png');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  height:500px;
+  background-color: black;
+  border:2px solid white;
+}
+.bio{
+  position: absolute;
+  bottom: 24.5%;
+  float: right;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size:24px;
+  padding: 50px;
+  background-color: black;
+  left: 42%;
+  margin-left:-50px;
+  border: 2px solid;
+
+}
+
+
+ul{
+
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+li{
+   display: inline-block;
+   float: right;
+}
+li a{
+  font-family: 'Squada One', cursive;
+  background-color: black;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  font-size: 48px;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .parallax {
+    background-attachment: scroll;
+     background-image: url('PBG-01.png');
+  }
+  .Doris{
+    height: 30%;
+    width: 30%;
+    bottom: 30%;
+  }
+  .Doris2{
+    display: none;
+  }
+  .bio{
+    font-size: 12px;
+    bottom: 0;
+
+  }
+  .navbar{
+    position: absolute;
+    left: 0px;
+    width: 50px;
+
+  }
+
+  li{
+    display: block;
+    float: left;
+     padding:10px;
+  }
+  ul{
+    float: left;
+
+  }
+}
+

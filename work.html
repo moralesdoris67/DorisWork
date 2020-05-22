@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Work</title>
+	<link rel="stylesheet" type="text/css" href="work.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	<div class="navbar">
+		<ul>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>			
+			<li><a href="work.html">Work</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+	</div>
+<div class="parallax">
+
+	<div class="box">
+
+		<a href="homework.html"><u style="color: white; font-size: 24px;font-family: 'Roboto Mono', monospace;">Other Classes</u></a>
+		<div class="slide">
+
+
+		<div class="fade">
+			<div class="number">1/2 </div>		
+			<img src="cat.png" style="width:20vw">	
+		</div>
+
+		<div class="fade">
+			<div class="number">2/2 </div>		
+			<img src="molly.png" style="width:20vw">
+		</div>
+		</div>
+	</div>
+
+	<div class="box2">
+
+		<u style="color: white; font-size: 24px;font-family: 'Roboto Mono', monospace;">Homeworks</u>
+
+		<div class="slide2">
+
+		<div class="fade2">
+			<div class="number">1/4 </div>		
+			<img src="journal1.png" style="width:20vw">	
+		</div>
+
+		<div class="fade2">
+			<div class="number">2/4 </div>		
+			<img src="journal2.png" style="width:20vw">
+		</div>
+
+		<div class="fade2">
+			<div class="number">1/4 </div>		
+			<img src="journal3.png" style="width:20vw">	
+		</div>
+
+		<div class="fade2">
+			<div class="number">1/4 </div>		
+			<img src="folderpoetry.jpg" style="width:20vw">	
+		</div>
+
+		
+
+
+
+		</div>
+	</div>
+
+
+</div>
+
+	
+</body>
+<script type="text/javascript">var slideIndex = 0;
+var slideIndex2 = 0;
+showSlides();
+showSlides2();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("fade");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+	function showSlides2() {
+  var j;
+  var slides2 = document.getElementsByClassName("fade2");
+  for (j = 0; j < slides2.length; j++) {
+    slides2[j].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {slideIndex2 = 1}
+  slides2[slideIndex2-1].style.display = "block";
+  setTimeout(showSlides2, 3000); 
+}
+	</script>
+</html>
